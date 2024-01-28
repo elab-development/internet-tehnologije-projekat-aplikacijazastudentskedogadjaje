@@ -13,4 +13,8 @@ class Organizacija extends Model
         'imeOrganizacije',
         'vrstaDogadjaja',
     ];
+
+    public function objave(){
+        return $this->hasMany(Objava::class);
+    }
 }

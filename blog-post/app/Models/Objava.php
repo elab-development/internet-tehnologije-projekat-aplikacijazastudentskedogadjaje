@@ -14,4 +14,12 @@ class Objava extends Model
         'podnaslov',
         'tekst',
     ];
+
+    public function organizacija(){
+        return $this->belongsTo(Organizacija::class);
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
